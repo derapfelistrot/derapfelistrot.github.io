@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Anja Meyer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="report.html">Workflow</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/data.html">Datengrundlage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sources.html">Referenzen</a>
+                        </li>
+                    </ul>
+                    <a href="./pages/contact.html" class="btn btn-outline-success">
+                        kontakt
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <h1 style=" margin-top: 50px; text-align: center;">Bilinguales Literaturkorpus AR-DE: Erstellung und Möglichkeiten
+    </h1>
+
+    <div class="container">
+        <aside style="position: sticky; top: 0; overflow-y: scroll; max-height: 800px; min-width: fit-content;" class="table-of-contents">
+            <!-- will be generated with JS -->
+        </aside>
+
+
+        <main class="post-content">
+            <hr class="sperator">
+            <h2>1. Vorbereitung</h2>
+            <h3>1.1. Datengrundlage</h3>
+            <p>
+                Bei der Erstellung eines Literaturkorpus ist zu beachten, dass die Werke
+                ein festgelegtes literarisches Feld repräsentieren.
+                <!--</p>
+            <h4>1.1.2. Struktur der Daten</h4>
+            <p>-->
+                Die für die Arbeit verwendeten Werke gruppieren sich hinsichtlich:
+
+                <!--<ol type="a">
+
+                <li>Zielgruppe: 4-8 Jahre</li>
+                <li>Genre: Kinderliteratur</li>
+                <li>Sprachen: Bilingual Arabisch - Deutsch</li>
+                <li>Buchgestaltung: Illustriert</li>
+                <li>Wordcount (pro Sprache, pro Titel):  < 3000 W. </ol> -->
+            <table class="vorbereitung-table">
+                <tbody>
+                    <tr>
+                        <td class="keywords">Zielgruppe:</td>
+                        <td>4-8 Jahre</td>
+                    </tr>
+                    <tr>
+                        <td class="keywords">Genre:</td>
+                        <td>Kinderliteratur</td>
+                    </tr>
+                    <tr>
+                        <td class="keywords">Sprachen:</td>
+                        <td>Bilingual Arabisch - Deutsch</td>
+                    </tr>
+                    <tr>
+                        <td class="keywords">Buchgestaltung:</td>
+                        <td>Illustriert, Layout flexibel</td>
+                    </tr>
+                    <tr>
+                        <td class="keywords">Wordcount:</td>
+                        <td>pro Sprache, pro Titel < 3000 W.</td>
+                    </tr>
+                </tbody>
+            </table>
+            Die Auflistung der Werke mit Metadaten ist <a target="_blank" href="pages/data.html">hier</a> zu finden.
+            </p>
+            <p style="font-size: small;">
+                <u>Anmerkung</u>: Das erstellte Korpus erhebt keinen Anspruch auf
+                Repräsentativität.
+            </p>
+            <p><b>Schwachstellen:</b>
+                Das Korpus muss bezüglich seiner Repräsentativität kritisch betrachtet werden. Folgende Punkte sind zu
+                beachten: </p>
+
+
+            <table class="vorbereitung-table">
+                <tbody>
+                    <tr>
+                        <td class="keywords">Umfang:</td>
+                        <td>für verlässliche Aussagen über die zu repräsentierende Gruppe wird mehr Material benötigt.</td>
+                    </tr>
+                    <tr>
+                        <td class="keywords">Nachhaltigkeit:</td>
+                        <td>Erstellte Korpora sollten auch für zukünftige
+                            Forschungsfragen genutzt werden können. Das hier erstellte Korpus
+                            kann aber aufgrund von Urheberrechten nicht
+                            öffentlich zugänglich gemacht werden.</td>
+                    </tr>
+                    <tr>
+                        <td class="keywords">Repräsentanz:</td>
+                        <td>Da die Gesamtheit der zu repräsentierenden Werke nicht erfasst wurde, kann sie nicht wie von Herrmann
+                            und Lauer <a target="_blank" href="pages/sources.html?number=[7]">[7]</a> gefordert, durch das vorliegende Korpus abgebildert werden. Es gibt keine ausreichende Dokumentation der
+                            existierenden Werke, die auf die Kriterien zutreffen.</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <p style="font-size: small;">Kriterien zur Erstellung und Bewertung eines literaturwissenschaftlichen Korpus
+                sind bei Herrmann und Lauer <a target="_blank" href="pages/sources.html?number=[7]">[7]</a> sowie bei
+                Biemann <a target="_blank" href="pages/sources.html?number=[2]">[2]</a> zu finden.</p>
+
+            <h3>1.2. Digitalisierung der Daten</h3>
+            <p>Für die Einheitlichkeit der Daten werden Parameter festgelegt, die auf alle Scans angewendet
+                werden sollen. Die Erfassung der Scans erfolgte unter den Einstellungen:</p>
+            <ol type="a">
+                <li class="keywords">Format: .tif</li>
+                <li class="keywords">Auflösung: 300 dpi</li>
+                <li class="keywords">Farbeinstellung s/w</li>
+                <li class="keywords">Nur Seiten, die Text enthalten, werden gescannt.</li>
+            </ol>
+
+            <h3>1.3. Optical Character Recognition</h3>
+
+            <p> Optical Character Recognition (OCR) ist Teil der Document Image Analysis
+                (DIA), die sich mit automatisierter Textverarbeitung auf gescannten Bilddokumenten
+                beschäftigt<a target="_blank" href="pages/sources.html?number=[8]">[8]</a>. Hier wird bei der
+                Digitalisierung von Dokumenten Text aus Bild- und
+                Videomaterial
+                entnommen und maschinenlesbar sowie -editierbar gemacht. Dieser Schritt stellt die Grundlage für die
+                anschließenden computerbasierten Untersuchungen der Texte.</p>
+
+            <p><b>Anforderungen an die OCR-Engine</b><br>
+                Bei der Wahl der Engine für die Extraktion des arabischen und deutschen Textes, sind für die
+                Fragestellung der Arbeit folgende Kriterien zu beachten:</p>
+
+            <table class="vorbereitung-table">
+                <tbody>
+                    <tr>
+                        <td class="keywords">Lesrichtung:</td>
+                        <td>Die Engine muss sowohl auf <i>Right-to-Left-languages</i> (RTL,
+                            Arabisch) als auch auch <i>Left-to-right-languages</i> (LTR,
+                            Deutsch) ausgelegt sein.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="keywords">Illustrationen:</td>
+                        <td>Die Engine muss Text von Illustrationen abgrenzen können.</td>
+                    </tr>
+                    <tr>
+                        <td class="keywords">Layout:</td>
+                        <td>Die Textparagraphen müssen auf den Seiten mit flexiblem
+                            Layout gefunden werden.</td>
+                    </tr>
+                    <tr>
+                        <td class="keywords">Multilingualität:</td>
+                        <td>Um die Textdaten in einem Durchlauf zu erfassen, ist die
+                            Fähigkeit zur multilingualen Texterkennung von Vorteil.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr class="sperator">
+            <h2>2. OCR tesseract</h2>
+            <p>Für diese Arbeit wird die multilinguale OCR-Engine
+                <a href="tesseract" https://github.com/tesseract-ocr /> Tesseract </a> verwendet. Tesseract zeichnet
+                sich durch seine Schnelligkeit und Benutzerfreundlichkeit
+                aus. Eine umfangreiche Dokumentation über die Benutzung von tesseract ist
+                <a href="hier" https:// digitalcinemahub.github.io/projects/texterkennung.html> hier </a> zu finden.
+            </p>
+
+            <h3>2.1. OCR-Workflow</h3>
+            <p>Für den OCR-Workflow sind mehrere Schritte notwendig<a target="_blank"
+                    href="pages/sources.html?number=[4]">[4]</a>:
+            </p>
+            <table class="vorbereitung-table">
+                <tbody>
+                    <tr>
+                        <td class="keywords">Imageerstellung:</td>
+                        <td>Scans mit den oben festgelegten Parametern erstellen</td>
+                    </tr>
+
+                    <tr>
+                        <td class="keywords">Preprocessig:</td>
+                        <td>Bereinigt die Bilddatei: Entfernung von Rahmen,
+                            Kontrasteinstellungen, Rotation, <a href="Denoising"
+                                https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html#noise-removal>
+                                Denoising</a>,
+                            Binarisierung der Farbwerte</td>
+                    </tr>
+                    <tr>
+                        <td class="keywords">Segmentation:</td>
+                        <td>Erkennung und Eingrenzung von Textfeldern, Textzeilen
+                            (<i>lines</i>), Worten (<i>words</i>), Zeichen (<i>character</i>)</td>
+                    </tr>
+                    <tr>
+                        <td class="keywords">Recognition:</td>
+                        <td>segmentiertes Material wird mit Zeicheninventar der
+                            übergebenen Sprache abgeglichen.</td>
+                    </tr>
+                    <tr>
+                        <td class="keywords">Text:</td>
+                        <td>erkannter Text wird in .txt Datei gespeichert</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>2.2. Einstellungen</h3>
+            <p>Wie bei der Erstellung der Scans sollte auch bei der Erstellung der Textdaten auf eine
+                einheitliche
+                Einstellung geachtet werden, wenn die Qualität der Daten im Anschluss bewertet werden soll.
+                
+                Die hier gewählten Einstellungen sind:</p>
+
+            <table class="vorbereitung-table">
+                <tbody>
+                    <tr>
+                        <td class="keywords">Page-segmentation-mode:</td>
+                        <td><code> psm-3 </code>(Default)</td>
+                    </tr>
+                    <tr>
+                        <td class="keywords">Sprachparameter:</td>
+                        <td>Arabisch:<code> -l script/Arabic </code><br>
+                            Deutsch:<code> -l deu+script/Arabic</code></td>
+                    </tr>
+                    <tr>
+                        <td class="keywords">Dateibenennung:</td>
+                        <td>Ausgangstexte: <code> Sprache_Titel.txt </code><br>
+                            Übersetzungen: <code> T_ÜS_Titel_Sprache.txt </code></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-size: small;"><u>Anmerkungen</u>:ÜS steht für das Namenskürzel der
+                übersetzenden Person.</p>
+                <p> Die besten Ergebnisse für Arabischen Text gewährt die monolinguale Einstellung <code>-l script/Arabic</code> und anschließendes Filtern der lateinischen
+                    Schriftelemente. <br>
+                    Bei der monolingualen Sprachangabe <code> -l deu</code> hingegen, werden arabische Zeichen in
+                    lateinische
+                    Buchstaben oder
+                    Sonderzeichen umgewandelt, was ein schwer filterbares Textdokument mit hoher Fehlerquote
+                    hervorbringt. Die Angabe beider Sprachparametern für die Datei mit bilingualem Inhalt führt
+                    dazu,
+                    dass zum einen der deutschsprachige Anteil mit hoher Accuracy erkannt wird und zum anderen
+                    und der arabischsprachige Anteil leichter herauszufiltern ist, da die arabischen
+                    Schriftzeichen
+                    durch einen regulären Ausdruck (<a href="Regex" https://de.wikipedia.org/wiki/
+                    Regul%C3%A4rer_Ausdruck>Regex</a>) extrahiert und gelöscht werden können.<br>
+                    Für das arabische
+                    Schriftmaterial bietet der Parameter <code> Script/Arabic </code> außerdem deutlich bessere
+                    Ergebnisse als der
+                    Language Parameter <code>ara</code>. Zu beachten ist aber, dass sich der
+                    <code>Script/Arabic </code>Parameter
+                    sich auf das Spracherkennungsmodell bezüglich des Schrifttyps bezieht und deshalb alle
+                    Sprachen umfasst, die sich der <a href="arabischen
+                    Schrift" https://de.wikipedia.org/wiki/Arabische_Schrift>arabischen Schrift</a>
+                    bedienen. Unter anderem bedient sich auch die persische Schrift diesem Schriftsystem,
+                    wobei hier vier zusätzliche Buchstaben benutzt werden. Diese Zeichen werden stellenweise in
+                    dem hier extrahierten Textdaten fälschlicherweise erkannt.
+            </p>
+
+            <img style="width: 25%; " src="images/Persisch.png" alt="">
+            <figcaption>links: Original. rechts: Output tesseract<br>
+            Während links ein der arabische Buchstabe <i>Kāf</i> mit einer <i>fatha</i> Vokalisierung (Strich über dem Buchstaben) zu sehen ist, ist rechts der persische Buchstabe <i>Gāf</i> als Output erschienen, der den Strich oberhalb als festen Bestandteil enthält.</figcaption>
+            <hr style="width: 50%;">
+            <h3>2.3. Script Detection</h3>
+            <h4>Script und Script confidence</h4>
+            <p>
+                Tesseract bietet mehrere <i>Page-segmentation-modes</i> (psm) an, mit denen die <code>.tif</code>-Datei
+                auf
+                Textmaterial hin durchsucht wird. Bei der Übergabe des Befehls <code>psm-0</code> wird <i>Orientation
+                    and
+                    script detection </i> (OSD) durchgeführt. Dieser Schritt dient der
+                Vorbereitung für die Umwandlung von Bild zu Text. <br>
+                Die Benennung des Schriftsystems grenzt die
+                Sprachauswahl ein und der rotation-value gibt eine Einschätzung über die Ausrichtung des
+                Textes. Für die Bestimmung des Schriftsystems werden auf der Grundlage von Trainingsdaten
+                Muster wie Substrings oder Buchstaben erkannt, die Aufschluss über die Zugehörigkeit zu
+                einem Schriftsystem geben sollen. Dabei kommt der <i>static shape classifier</i> von tesseract zum
+                Einsatz,
+                der bereinigte Buchstaben oder Buchstabenfolgen (<i>blobs</i>) durch Rahmen (<i>bounding boxes</i>)
+                begrenzt. Diese Inhalte werden mit dem vorhandenen Bildmaterial abgeglichen und
+                klassifiziert<a target="_blank" href="pages/sources.html?number=[9]">[9]</a>. <br>
+                Um nicht jedes mögliche Vorkommen einer Form trainieren zu müssen,
+                wird in einem generativen Ansatz versucht, die repräsentativsten Abbildungen für ein
+                Schriftsystem zu finden. Hierfür werden Zeichen (<i>shape primitives</i>) gesucht, die möglichst in
+                jedem
+                Textkörper dieses Schriftsystems vorkommen. Diese Zeichen können einzelne Buchstaben oder
+                Buchstabenverbindungen sein,
+                welche als <i>fragments</i> bezeichnet werden. Die am häufigsten vorkommenden <i>fragments</i> sind für
+                die Script Detection
+                ausschlaggebend<a target="_blank" href="pages/sources.html?number=[9]">[9]</a>. Die Ausgabe des
+                vermuteten Scripttyps erfolgt gemeinsam
+                mit einem kumulativen confidence-Wert. Für kurze Texte ist dieser Wert aufgrund seiner Zusammensetzung
+                meist sehr niedrig.
+
+            </p>
+
+            <h4>Multilingualität bei der Script Detection</h4>
+            <p>Obwohl tesseract auf Multilingualität ausgelegt ist, werden unter der Einstellung <code>psm-0</code> bei
+                keinem
+                der hier vorliegenden bilingualen Seiten zwei Sprachen erkannt. Auf dem Großteil der Seiten
+                mit
+                bilingualem arabisch-deutschem Text wird <code>OSD Script: Latin</code> mit geringem confidence Wert
+                erkannt. Auf Seiten, wo sich nur arabischer Text befindet, wird <code>OSD Script: Arabic </code>
+                ausgegeben.
+            </p>
+            <h3>2.4. Binarisierung</h3>
+            <p>Die während des Preprocessings vorgenommene Binarisierung für den Text auf Illustrierten
+                Seiten
+                hat zur folge, dass bei Überschneidungen Textmaterial nicht erkannt wird. Bei folgendem
+                Ausschnitt wurde der Text, der über der dunkel gefärbten Illustration liegt, nicht erkannt:
+            </p>
+            <figcaption>Nur der im blau markierten Rahmen befindliche Text ist im Output von Tesseract wiederzufinden.</figcaption>
+            <img style="width: 100%; " src="images/Binarisierung2.png" alt="">
+            <hr style="width: 50%;">
+            <hr class="sperator">
+
+            <h2>3. OCR Arabisch:</h2>
+
+            <h3>3.1. Fehlerquellen</h3>
+            <p>
+                Auf den ersten Blick wird ersichtlich, dass die generierten Textdaten in arabischer Sprache
+                eine
+                deutlich höhere Fehlerquote aufweisen als die deutschen Textdaten. Eine ausführliche
+                Auseinandersetzung mit <i>character segmentation</i> für arabische Schriften ist bei Qaroush et
+                al.
+                <a target="_blank" href="pages/sources.html?number=[10]">[10]</a> und Alginahi <a target="_blank"
+                    href="pages/sources.html?number=[1]">[1]</a> zu finden. Hier wurden unter anderem folgende Besonderheiten der
+                Schrift
+                hervorgehoben,
+                die den OCR Vorgang erschweren und zu Ergebnissen mit hoher Fehlerquote führen:
+            </p>
+
+            <table class="vorbereitung-table">
+                <tbody>
+                    <tr>
+                        <td class="keywords">Kursivität:</td>
+                        <td>22 der 28 Buchstaben werden mit dem darauffolgenden
+                            Buchstaben verbunden. Zusätzlich ändern die Buchstaben je
+                            nach Stellung im Wort ihre Form. Daher kann ein
+                            Buchstabe bis zu drei verschiedene Formen annehmen. 
+                            Es besteht auch die Gefahr, dass ein Verbindungsstrich
+                            zwischen zwei Buchstaben als eigener character erkannt
+                            wird. Dies wird <i>over segmentation</i> genannt.</td>
+                    </tr>
+                    <tr>
+                        <td class="keywords">Ligaturen:</td>
+                        <td>
+                            <p> Je nach font verfügt die arabische Schrift über ein höheres
+                                oder niedrigeres Maß an Ligaturen. Das heißt, dass
+                                Buchstaben in solchem Maße ineinander übergehen, dass sie
+                                horizontal nicht zu trennen sind und gemeinsam eine neue
+                                Form ergeben. Diese Form muss für character segmentation
+                                von der Engine gelernt werden, da sonst under segmentation
+                                vorliegt. Auch das Wort "und" wird oft an das darauffolgende Wort angehängt, weshalb es bei der Anwendung von <i>white spaces</i> als Segmentierungsgrenze zu Ungenauigkeiten kommt.
+                            </p>
+                            <img style="width: 400px;" src="images/image2.png" alt="">
+                            <hr>
+                            <figcaption>Quelle: Alginahi<a target="_blank" href="pages/sources.html?number=[1]">[1]</a>,
+                                Figur 8</figcaption>
+                    </tr>
+                    <tr>
+                        <td class="keywords">Formen:</td>
+                        <td>einige Buchstaben basieren auf derselben Form und werden
+                            durch diakritische Zeichen (Punkte über oder unter den
+                            Buchstaben) differenziert. (Siehe Figur in <a target="_blank"
+                                href="pages/sources.html?number=[1]">[1]</a>). Liegen diese diakritischen Zeichen außerhalb des von der Engine gesetzten Rahmen, werden die Buchstaben nicht erkannt.<br>
+                            <img style="width: 250px;" src="images/image7.png" alt="">
+                            <hr>
+                            <figcaption>Quelle: Alginahi<a target="_blank" href="pages/sources.html?number=[1]">[1]</a>,
+                                Fig. 5.</figcaption>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="keywords">Diacritics:</td>
+                        <td>
+                            <p>Neben den Punkten, die die Buchstaben voneinander
+                                abgrenzen, gibt es Zeichen für die Vokalisierung. Diese
+                                Zeichen können beim OCR Vorgang mit Punkten verwechselt werden,
+                                was zur Folge hat, dass ein anderer Buchstabe
+                                erkannt wird. (Auf den Figuren 2-4 ist ein Überblick über die
+                                zusätzlichen Zeichen zu sehen.)</p>
+                            <img style="width: 320px;" src="images/image6.png" alt="">
+                            <hr>
+                            <figcaption>Quelle: Alginahi <a target="_blank"
+                                    href="pages/sources.html?number=[1]">[1]</a>, Fig. 2-4</figcaption>
+
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <h3>3.2. Beispiele</h3>
+
+            <img style=" margin-left:28% ; width: 500px;" src="images/image9.png" alt="">
+            <hr>
+            <figcaption>Ausschnitt: <a target="_blank" href="pages/data.html">Taher, Dünges(ÜS): Mein neuer Freund, der Mond</a>, S. 4. <br>
+                Rechts: Original, links: Output tesseract. <br>Hier ist an zwei Beispielen zu sehen, wie diakritische Zeichen verwechselt werden. 
+            Die entstandenen fehlerhaften Worte, wurden mit roten Punkten von der Rechtschreibprüfung markiert. In beiden Fällen ist der mittlere der drei Buchstaben falsch erkannt worden. Im ersten Beispiel wird ein im Arabischen nicht existierender Buchstabe abgebildet während im zweiten Beispiel eine Umwandlung von [na] zu [t] erfolgt.</figcaption><br><br>
+            
+            <img style=" margin-left:28% ; width: 500px;" src="images/Fehlerquellen.png" alt="">
+            <hr>
+            <figcaption>Ausschnitt: <a target="_blank" href="pages/data.html">Hesse, Achiq(ÜS): Neulich am Südpol</a>, S.2.<br>links: Original, rechts: Output tesseract.<br>
+            Die Fehler wurden hier durch Farbmarkierungen kategorisiert. <br>
+        <font color=blue>blau:</font>fehlerhafte Wiedergabe der Punkte -> im Output sind jeweils andere Buchstaben zu sehen.<br>
+        <font color="red"> rot:</font> fehlende Vokalzeichen<br>
+        <font color="green"> grün:</font> Satzzeichen werden nicht oder fehlerhaft erkannt.<br>
+        <font color="yellow"> gelb:</font> fehlende Buchstaben.</figcaption>
+
+            <hr class="sperator">
+
+            <h2>4. Accuracy</h2>
+            <p>Mithilfe dieses in Python programmierten <a href="Skript" https://github.com/gitmthoma/
+                    ocr_super8_project/blob/master/sample_tesseract_TIF.ipynb>Skripts</a>(<i>Script for comparing
+                    different OCR
+                    workflows</i>) wurden Genauigkeitswerte für die Deutschen und Arabischen Ergebnisse des OCR-Durchgangs
+                ermittelt.
+            </p>
+
+            <h3>4.1. Accuracy AR</h3>
+            <img style="width: 100%;" src="images/image10.png" alt="">
+            <figcaption>Die Werte bewegen sich zwischen 56,4% und 73,5% mit einem Durchschnitt von 69,3%. (Alle
+                Werte auf erste Nachkommastelle gerundet).</figcaption><br>
+
+            <h3>4.2. Accuracy DE</h3>
+            <img style="width: 100%;" src="images/image4.png" alt="">
+            <hr>
+            <figcaption>Die Werte bewegen sich zwischen 86,8% und 97,4% bei einem Durchschnitt von 96,5%.</figcaption>
+            <br>
+
+            <hr class="sperator">
+
+            <h2>5. Postprocessing</h2>
+            <p>Das Postprocessing der Reintextdateien wurde manuell durchgeführt, in dem der Text mit dem
+                Ausgangsmaterial verglichen und angepasst wurde. Dieser Schritt erfolgte manuell, weil die
+                diakritischen Zeichen mit den Zeichen auf den TIFF-Dateien übereinstimmen sollten. Die
+                Vokalisierung durch diakritische Zeichen ist in der hier verwendeten Datengrundlage nicht
+                konsequent sondern partiell und nach eigenem Ermessen der Verfassenden gegeben. Die Arbeit
+                mit einem Dictionary für das Postprocessing würde entweder alle Vokalzeichen entfernen oder
+                eine einheitliche Vokalisierung durchführen, was dem vorliegenden Material nicht entspricht.</p>
+
+            <hr class="sperator">
+
+            <h2>6. Quantitative Korpusanalyse</h2>
+
+            <p>Bei der Quantitativen Analyse von Literaturkorpora kann Aufschluss über den Inhalt
+                gegeben werden. Die Grafik zeigt einen Ausschnitt aus <a href="Voyant tools" https://voyant-tools.org />
+                Voyant tools</a>,
+                eine browserbasierte Open-source Anwendung für Korpusexploration. Voyant-tool funktioniert <i>diacritic sensitive</i>. Das heißt, Worte werden für distinktiv gehalten, wenn sie in Groß- und Kleinbuchstaben oder Vokalisierung voneinander abweichen.
+                Die Vokalzeichen für die grammatischen Endungen im Arabischen machen aus einem
+                Wort mehrere Worte, was für die Erfassung von Worthäufigkeiten eine Verfälschung der
+                Ergebnisse mit sich zieht.</p><br>
+                <img style="width:100%" src="images/image8.png" alt=""><br>
+                <figcaption Screenshot aus Voyant-tools.<br> 
+                    Platz 1: مِنْ <i>min</i> (deutsch: <i>von</i>), kein Vokal am Wortende.<br>
+                    Platz 2: مِنَ <i>mina</i> (deutsch: <i>von</i>), <i>a</i>-Auslaut am Wortende.<br>
+                    Platz 3: القَمَرِ <i>alqamari</i> deutsch: <i>der Mond</i> mit Genitiv-Auslaut <i>i</i>.<br>
+                    Platz 4: القمر <i>alqamar</i> deutsch: <i>der Mond</i> ohne Vokalisierung. <br>
+                    Platz 5: القَمَرُ <i>alqamaru</i> deutsch: <i>der Mond</i> mit Nominativ-Auslaut <i>u</i>.<br>
+                    Platz 6: من <i>min</i> <b>oder</b> <i>man</i>, deutsch <i>von</i> <b>oder</b> <i>wer</i><br>
+                    Platz 7: مَنِ <i>mani</i> deutsch: <i>wer</i>, <i>i</i>-Auslaut am Wortende.<br>
+                    Platz 8: مَنْ <i>man</i> deutsch: <i>wer</i>, kein Vokal am Wortende.</figcaption><br>
+                <p>Unvokalisiert kann das auf den Plätzen 1,2 und 6-8 vorkommende Wort kontextabhängig sowohl „wer“ als auch
+                „von“ bedeuten. Oder, da es mit * versehen ist, kann es auch als Endung eines anderen
+                Wortes vorkommen. An diesen Beispielen wird deutlich, dass die Daten ohne Kontext mit
+                Vorsicht betrachtet werden müssen.
+            </p>
+    
+            <hr class="sperator">
+
+            <h2>7. Stilometrische Untersuchungen nach Übersetzungssignalen</h2>
+
+            <p>Stilometrische Analysen beziehen sich auf den Stil einer schreibenden Person. Die
+                wahrscheinliche Ermittlung von Urhebenden eines Textes mithilfe quantitativer linguistischer
+                Methoden wird Stilometrie genannt <a target="_blank" href="pages/sources.html?number=[5]">[5]</a>. <br>
+                Für die Ermittlung des individuellen Schreibstils einer Person werden häufig die meist verwendeten
+                Wörter (Most frequent words MFW) ermittelt. Durch den Einsatz von Distanzmaßen, wird die wahrscheinliche Autorschaft ermittelt.<br> <br>
+                Als Vergleichsbasis für die übersetzten Texte wurden alle Originaltexte von Chat-Gpt 3.5 maschinell übersetzt. Diese Dateien sind an dem Affix <code>T GPT</code> zu erkennen.
+                </p>
+            <h3>7.1. Tool: stylo</h3>
+            <p>Mit dem in R programmierten Tool <a href="stylo"
+                    https://github.com/computationalstylistics/stylo>stylo</a>
+                können stilometrische Untersuchungen durchgeführt werden, wobei ein einfach
+                zugängliches Graphical User-Interface für eine hohe Nutzerfreundlichkeit sorgt.
+            </p>
+            <h3>7.2. Deutsch </h3>
+            <div class="crop">
+                <img src="images/image11.png">
+
+            </div>
+
+            <hr>
+            <figcaption>Hier ist ein durch stylo erstellter Bootstrap consensus tree zu sehen. Die Gruppierungen sind das Ergebnis der Auswertungen von Distanzen zwischen den MFW. Dazu wurden mehrere Durchläufe von 100 MFW bis 1000 MFW in 100er Schritten durch das Tool getätigt.</figcaption><br>
+            <p>Festzustellen ist, dass die deutschen Originalwerke zusammen gruppiert werden, obwohl sie von anderen Autoren verfasst wurden. Das heißt, dass es tendenziell eine Unterscheidung zwischen dem Stil in aus dem Arabischen übersetzten und ursprünglich im Deutschen verfassten Werken gibt. <br>
+                 Die Übersetzungen von Chat-GPT 3.5 und den menschlichen Übersetzenden finden sich paarweise für die selben Werke zusammen. Das war aufgrund des übereinstimmenden Ausgangstextes zu erwarten. </p>
+            <h3>7.3. Arabisch</h3>
+            <div class="crop">
+
+                <img style="width: 100%;" src="images/image3.png">
+
+            </div>
+            <hr>
+            <figcaption>Hier ist der Bootstrap Consensus Tree mit den selben Einstellungen wie oben für das Arabische Subkorpus abgebildet.</figcaption><br>
+            <p>Überraschenderweise gruppieren sich hier die übersetzten Werke mit dem selben Ausgangstext von menschlichen Übersetzenden und ChatGPT nicht zusammen. <br> Die Werke gruppieren sich hier nach Übersetzenden, wobei die von Chat GPT 3.5 übersetzten Werke ebenfalls zusammen gruppiert werden. Der Übersetzer <code>ACH</code> und <code>ABU</code> wird zusammen gruppiert. Ähnliches ist bei <code>HAS</code> zu beobachten, wobei dieser den Übersetzungen von Chat-GPT 3.5 nahe kommt.</p>
+
+            <hr class="sperator">
+
+            <h2>8. Ausblick</h2>
+            <h3>8.1. OCR-Engine Kraken für AR</h3>
+            Die Open Source OCR-Engine <a href="kraken" https://kraken.re/main/index.html>Kraken</a> wurde von Dr.
+            Benjamin Kiessling entwickelt. Sie zeichnet sich dadurch aus, Schriftsysteme mit verschiedenen Anordnungen
+            wie <i>Right-to-left script</i> oder <i>Top-to-bottom script</i> zu unterstützen. <br> Außerdem lässt sich
+            der Output mit einer geringen Menge an Daten durch effektives Training verbessern.<br>
+            Für <i>Arabic script</i> wurde mit 800-1000 Zeilen Trainingsdaten Genauigkeitswerte von >97,5%
+            erreicht<a target="_blank" href="pages/sources.html?number=[8]">[8]</a>.<br>
+            Die Plattform <a href="eScriptorium" https://www.sofer.info /> <i>eScriptorium</i></a> bietet ein
+            Nutzerfreundliches GUI für OCR mit kraken. <br>
+
+
+            <img width="100%" src="images/image1.png" alt="">
+            <hr>
+            <figcaption>Regenbogenfisch 1: tesseract: 74,3% und Kraken: 78,7%</figcaption>
+
+            Beim Test mit einem Werk aus dem Korpus wurden bereits bessere Ergebnisse als mit tesseract erzielt.
+            Allerdings ist anzumerken, dass tesseract eine hohe Geschwindigkeit für die Verarbeitung von mehrseitigen
+            Dokumenten gewährt.<br>
+            <p style="font-size: small;"><u>Anmerkung</u>:
+                Bei Fragen zur Nutzung wird eine Sprechstunde des <a href="UB Mannheim"
+                    https://ocr-bw.bib.uni-mannheim.de />Kompetenzzentrums OCR der UB Mannheim angeboten.</a></p>
+
+            <h3>8.2. Stilometrische Untersuchungen für bilinguale Korpora mit POS-tags</h3>
+            <p>Für die Arbeit mit bilingualen Literaturkorpora kann Cinkovás und Rybickis Ansatz der Einbindung von
+                <i>POS-tags</i> hilfreich sein <a target="_blank" href="pages/sources.html?number=[3]">[3]</a>. In dem crosslinguistischen Ansatz wird der Inhalt der Texte durch
+                <i>Part-of-Speech-Tags</i> (PoS-tagging) ersetzt, die die grammatische Kategorie der Wörter
+                wieder gibt. Dadurch wird eine sprachunabhängige stilometrische Analyse ermöglicht.<br> Zu beachten ist bei dieser Vorgehensweise für arabische Texte, dass PoS-tagging aufgrund der 
+                der Morphologie der Sprache eine Herausforderung dar. Arabisch ist eine stark flektierende Sprache. Ein Wort kann mehrere grammatische Informationen beinhalten, die nicht eindeutig abgegrenzt werden können.
+                </p>
+
+
+        </main>
+    </div>
+    <footer>
+
+        <script src="js/main.js"></script>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Anja Meyer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./../report.html">Workflow</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./data.html">Datengrundlage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sources.html">Referenzen</a>
+                        </li>
+                    </ul>
+                    <a href="./contact.html" class="btn btn-outline-success">
+                        kontakt
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="referenzen-page">
+
+        <div>
+            <h1>
+                Referenzen
+            </h1>
+        </div>
+        <div class="referenzen">
+            
+            <p id="[1]" ><span>[1]</span> Alginahi, Yasser M. (2011). A survey on Arabic character segmentation. In: IJDAR (2013)
+                16, S.105–126. DOI 10.1007/s10032-012-0188-6 [Zugriff am 08.03.24]. </p>
+            <p id="[2]" ><span>[2]</span> Biemann, Chris et al. (2022). Wissensrohstoff Text. Eine Einführung in das Text Mining.
+                2.
+                Auflage, S. 131-176.
+            <p id="[3]" ><span>[3]</span> Cinkova, Silvie & Rybicki, Jan. (2020). Stylometry in a Bilingual Setup. In: Proceedings
+                of the
+                Twelfth Language Resources and Evaluation Conference, pages 977–984, Marseille, France.
+                European Language Resources Association. <a href="https://aclanthology.org/2020.lrec-1.123/">https://aclanthology.org/2020.lrec-1.123/</a> [Zugriff am
+                22.03.24]</p>
+            <p id="[4]" ><span>[4]</span> Faizullah et. al (2023): A Survey of OCR in Arabic Language: Applications, Techniques
+                and
+                Challenges.</p>
+            <p id="[5]" ><span>[5]</span> Grieve, J.(2023): Register variation explains stylometric authorship analysis. In:
+                Corpus
+                Linguistics and Ling. Theory 19(1)., S. 47-77.</p>
+            <p id="[6]" ><span>[6]</span> Hareide, L. & Hofland, K.: Compiling a Norwegian-Spanish parallel Corpus. in:
+                Quantitative
+                Methods in Corpus-Based translation Studies, 2012. S. 75-114.</p>
+            <p id="[7]" ><span>[7]</span> Herrmann, Berenike J. & Lauer, Gerhard (2018). Korpusliteraturwissenschaft. Zur
+                Konzeption
+                und Praxis am Beispiel eines Korpus zur literarischen Moderne. In: Osnabrücker Beiträge zur
+                Sprachtheorie 92, S. 127-156.</p>
+            <p id="[8]" ><span>[8]</span> Kiessling, B., 2021. Avancées en Reconnaissance Optique des Caractères pour les
+                Documents
+                Arabes Historiques. Informatique et langage. Université Paris sciences et lettres.</p>
+            <p id="[9]" ><span>[9]</span> Unnikrishnan, Ranjith & Smith, Ray, 2009. Combined script and page orientation
+                estimation
+                using the Tesseract OCR engine. In: ACM International Conference Proceeding Series. 6. DOI:
+                10.1145/1577802.1577809. [Zugriff am 14.03.2024].</p>
+        </div>
+
+        <script>
+            const urlParams = new URLSearchParams(window.location.search)
+            document.getElementById(urlParams.get("number")).style = "background-color: #05b78e6e;"
+
+        </script>
+
+    </main>
+</body>

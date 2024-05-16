@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", OpenSans, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: rgb(61, 64, 67);
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  margin: 1em auto 0;
+}
+
+.container>* {
+  padding: 20px 25px;
+}
+
+.table-of-contents {
+  position: relative;
+  flex-basis: 260px;
+  background: #F5F5F5;
+}
+
+.table-of-contents p {
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  color: #555;
+}
+
+.table-of-contents ul {
+  position: fixed;
+  /* Chrome (asshole) */
+  position: sticky;
+  /* Firefox */
+  margin-top: 2em;
+  top: 4em;
+}
+
+h1:first-child {
+  margin-top: 0;
+}
+
+.post-content {
+  flex-basis: 850px;
+  max-width: 100%;
+}
+
+
+/* TOC part */
+
+.table-of-contents svg {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  bottom: auto;
+  display: none;
+  stroke: #05b78e;
+  transform: translateY(-50%);
+}
+
+.toc-reading svg {
+  display: block;
+}
+
+.table-of-contents ul {
+  width: 300px;
+  counter-reset: articles;
+  padding: 0;
+}
+
+
+.table-of-contents li {
+  display: block;
+
+}
+
+.table-of-contents li .title {
+  counter-increment: articles;
+
+}
+
+ol>li>a {
+  text-decoration: none;
+  color: inherit;
+
+  font-weight: bold;
+}
+
+
+li {
+  margin: 20px;
+}
+
+.table-of-contents a.title {
+  display: block;
+  padding: 0 1.1em 0 3.2em;
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+a.toc-reading,
+a.toc-already-read.toc-reading {
+  color: #05b78e;
+  opacity: 1;
+}
+
+a.toc-already-read {
+  opacity: 0.4;
+}
+
+.table-of-contents a.title:before {
+  content: counter(articles, decimal);
+  position: absolute;
+  bottom: auto;
+  left: 0;
+  top: 50%;
+  width: 36px;
+  height: 36px;
+  line-height: 34px;
+  text-align: center;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #d9d9d9 inset;
+  color: #4d4d4d;
+}
+
+footer {
+  position: relative;
+  background: #222222;
+  color: #F2F2F2;
+  text-align: center;
+  padding: 50px 25px;
+}
+
+footer a {
+  color: #b2c908;
+}
+
+.heart {
+  font-size: 60px;
+  opacity: 0.1;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #05b78e;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+a.title:hover:after {
+  width: 100%;
+  left: 50px;
+}
+.hover-effect::after {
+  color: #038d6d;
+
+  width: 100%;
+  left: 0;
+}
+
+
+.keywords {
+  font-weight: bold;
+}
+
+.vorbereitung-table td {
+  padding: 20px 5px;
+  vertical-align: top;
+}
+
+.vorbereitung-table {
+  margin-left: 10%;
+  width: 100%;
+}
+
+
+figcaption {
+  font-style: italic;
+  font-size: small;
+}
+
+.remark {
+  font-style: italic;
+  font-size: small;
+}
+
+td>p {
+  margin: 0;
+}
+
+.crop {
+  width: 100%;
+  overflow: hidden;
+}
+
+.crop img {
+  width: 100%;
+  margin-left: -75px;
+  margin-bottom: -11px;
+
+}
+
+header > nav {
+  background-color: #05b78e;
+}
+
+header a
+{
+  color: white !important
+}
+
+header a:hover
+{
+  color: #4fffd6 !important
+}
+
+a.btn:hover
+{
+  background-color: #038d6d00;
+  border: solid #05b78e 1px;
+}
+
+#referenzen-page {
+  margin-top: 50px;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.referenzen > p > span {
+  color:#05b78e
+}
+
+
+
+#datengrundlage
+{
+  margin-top: 50px;
+
+}
+
+#homeCarousel
+{
+  height: 500px !important;
+}
+
+
+#homeCarousel .carousel-item
+{
+  height: 500px
+}
+
+#homeCarousel .carousel-caption
+{
+  bottom: 7.25rem;
+}
+
+p > a, td a, main a
+
+{
+  color:#05b78e
+}
+
+.sperator
+{
+  margin: 4rem 0; 
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #05b78e; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #036e55; 
+}

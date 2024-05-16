@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Anja Meyer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./../report.html">Workflow</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Datengrundlage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sources.html">Referenzen</a>
+                        </li>
+                    </ul>
+                    <a href="./contact.html" class="btn btn-outline-success">
+                        kontakt
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="datengrundlage">
+
+        <h1>Datengrundlage</h1>
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col"  data-t="s" data-v="Übersetzungsrichtung" id="sjs-A1">Übersetzungsrichtung</th>
+                    <th scope="col"  data-t="s" data-v="Übersetzer*in" id="sjs-B1">Übersetzer*in</th>
+                    <th scope="col"  data-t="s" data-v="Autor*in" id="sjs-C1">Autor*in</th>
+                    <th scope="col"  data-t="s" data-v="Titel Deutsch" id="sjs-D1">Titel Deutsch</th>
+                    <th scope="col"  data-t="s" data-v="Titel Arabisch" id="sjs-E1">Titel Arabisch</th>
+                    <th scope="col"  data-t="s" data-v="Erscheinungsjahr" id="sjs-F1">Erscheinungsjahr</th>
+                    <th scope="col"  data-t="s" data-v="Verlag" id="sjs-G1">Verlag</th>
+                    <th scope="col"  data-t="s" data-v="Wordcount_AR" id="sjs-H1">Wordcount_AR</th>
+                    <th scope="col"  data-t="s" data-v="Wordcount_DE" id="sjs-I1">Wordcount_DE</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-t="s" data-v="AR>DE" id="sjs-A2">AR&gt;DE</td>
+                    <td data-t="s" data-v="Ahlf-Wien, Imke" id="sjs-B2">Ahlf-Wien, Imke</td>
+                    <td data-t="s" data-v="Mazini, Habib" id="sjs-C2">Mazini, Habib</td>
+                    <td data-t="s" data-v="Die Wut der kleinen Wolke" id="sjs-D2">Die Wut der kleinen Wolke</td>
+                    <td data-t="s" data-v="غضب السحابة الصغيرة" id="sjs-E2">غضب السحابة الصغيرة</td>
+                    <td data-t="n" data-v="2011" id="sjs-F2">2011</td>
+                    <td data-t="s" data-v="Edition Orient" id="sjs-G2">Edition Orient</td>
+                    <td data-t="n" data-v="780" id="sjs-H2">780</td>
+                    <td data-t="n" data-v="1144" id="sjs-I2">1144</td>
+                </tr>
+                <tr>
+                    <td data-t="s" data-v="AR>DE" id="sjs-A3">AR&gt;DE</td>
+                    <td data-t="s" data-v="Dünges, Petra" id="sjs-B3">Dünges, Petra</td>
+                    <td data-t="s" data-v="Zaghir, Rania" id="sjs-C3">Zaghir, Rania</td>
+                    <td data-t="s" data-v="Wer hat mein Eis gegessen?" id="sjs-D3">Wer hat mein Eis gegessen?</td>
+                    <td data-t="s" data-v="مَنْ لَحَسَ قَرْنَ البُوظَة؟" id="sjs-E3">مَنْ لَحَسَ قَرْنَ البُوظَة؟</td>
+                    <td data-t="n" data-v="2016" id="sjs-F3">2016</td>
+                    <td data-t="s" data-v="Edition Orient" id="sjs-G3">Edition Orient</td>
+                    <td data-t="n" data-v="241" id="sjs-H3">241</td>
+                    <td data-t="n" data-v="387" id="sjs-I3">387</td>
+                </tr>
+                <tr>
+                    <td data-t="s" data-v="AR>DE" id="sjs-A4">AR&gt;DE</td>
+                    <td data-t="s" data-v="Dünges, Petra" id="sjs-B4">Dünges, Petra</td>
+                    <td data-t="s" data-v="Shafik, Samira" id="sjs-C4">Shafik, Samira</td>
+                    <td data-t="s" data-v="Sonne und Mond. Wie aus Feinden Freunde wurden." id="sjs-D4">Sonne und Mond.
+                        Wie aus Feinden Freunde wurden.</td>
+                    <td data-t="s" data-v="الشَّمْسُ وَالقَمَرُ: مِنْ عَدُوَّيْنِ إِلَى صَدِيقَيْنِ" id="sjs-E4">
+                        الشَّمْسُ وَالقَمَرُ: مِنْ عَدُوَّيْنِ إِلَى صَدِيقَيْنِ</td>
+                    <td data-t="n" data-v="2015" id="sjs-F4">2015</td>
+                    <td data-t="s" data-v="Edition Orient" id="sjs-G4">Edition Orient</td>
+                    <td data-t="n" data-v="638" id="sjs-H4">638</td>
+                    <td data-t="n" data-v="1154" id="sjs-I4">1154</td>
+                </tr>
+                <tr>
+                    <td data-t="s" data-v="AR>DE" id="sjs-A5">AR&gt;DE</td>
+                    <td data-t="s" data-v="Dünges, Petra" id="sjs-B5">Dünges, Petra</td>
+                    <td data-t="s" data-v="Taher, Walid" id="sjs-C5">Taher, Walid</td>
+                    <td data-t="s" data-v="Mein neuer Freund, der Mond." id="sjs-D5">Mein neuer Freund, der Mond.</td>
+                    <td data-t="s" data-v="صاحبي الجديد" id="sjs-E5">صاحبي الجديد</td>
+                    <td data-t="n" data-v="2004" id="sjs-F5">2004</td>
+                    <td data-t="s" data-v="Edition Orient" id="sjs-G5">Edition Orient</td>
+                    <td data-t="n" data-v="239" id="sjs-H5">239</td>
+                    <td data-t="n" data-v="377" id="sjs-I5">377</td>
+                </tr>
+                <tr>
+                    <td data-t="s" data-v="AR>DE" id="sjs-A6">AR&gt;DE</td>
+                    <td data-t="s" data-v="Dünges, Petra" id="sjs-B6">Dünges, Petra</td>
+                    <td data-t="s" data-v="Qa'ud, Fuad" id="sjs-C6">Qa'ud, Fuad</td>
+                    <td data-t="s" data-v="Die Stadt, wo man sagt: " das="" ist="" wunderschön""="" id="sjs-D6">Die
+                        Stadt, wo man sagt: "Das ist wunderschön"</td>
+                    <td data-t="s" data-v="بلاد الصلاة على الزين" id="sjs-E6">بلاد الصلاة على الزين</td>
+                    <td data-t="n" data-v="2004" id="sjs-F6">2004</td>
+                    <td data-t="s" data-v="Edition Orient" id="sjs-G6">Edition Orient</td>
+                    <td data-t="n" data-v="493" id="sjs-H6">493</td>
+                    <td data-t="n" data-v="787" id="sjs-I6">787</td>
+                </tr>
+                <tr>
+                    <td data-t="s" data-v="AR>DE" id="sjs-A7">AR&gt;DE</td>
+                    <td data-t="s" data-v="Dünges, Petra" id="sjs-B7">Dünges, Petra</td>
+                    <td data-t="s" data-v="Raschid,  Fauziya" id="sjs-C7">Raschid, Fauziya</td>
+                    <td data-t="s" data-v="Das mutige Kleid" id="sjs-D7">Das mutige Kleid</td>
+                    <td data-t="s" data-v="الثوب المغامر" id="sjs-E7">الثوب المغامر</td>
+                    <td data-t="n" data-v="2004" id="sjs-F7">2004</td>
+                    <td data-t="s" data-v="Edition Orient" id="sjs-G7">Edition Orient</td>
+                    <td data-t="n" data-v="315" id="sjs-H7">315</td>
+                    <td data-t="n" data-v="466" id="sjs-I7">466</td>
+                </tr>
+                <tr>
+                    <td data-t="s" data-v="AR>DE" id="sjs-A8">AR&gt;DE</td>
+                    <td data-t="s" data-v="Taufiq, Suleman" id="sjs-B8">Taufiq, Suleman</td>
+                    <td data-t="s" data-v="Taufiq, Suleman" id="sjs-C8">Taufiq, Suleman</td>
+                    <td data-t="s" data-v="Oh wie schön ist Fliegen oder Wie die Ente den Mond sucht." id="sjs-D8">Oh
+                        wie schön ist Fliegen oder Wie die Ente den Mond sucht.</td>
+                    <td data-t="s" data-v="آه ما أجمَل الطَيَران عاليًا أو كَيفَ بَحَثَت البَطَةُ عَن القَمَر"
+                        id="sjs-E8">آه ما أجمَل الطَيَران عاليًا أو كَيفَ بَحَثَت البَطَةُ عَن القَمَر</td>
+                    <td data-t="n" data-v="2016" id="sjs-F8">2016</td>
+                    <td data-t="s" data-v="Edition Orient" id="sjs-G8">Edition Orient</td>
+                    <td data-t="n" data-v="610" id="sjs-H8">610</td>
+                    <td data-t="n" data-v="804" id="sjs-I8">804</td>
+                </tr>
+                <tr>
+                    <td id="sjs-A9"></td>
+                    <td id="sjs-B9"></td>
+                    <td id="sjs-C9"></td>
+                    <td id="sjs-D9"></td>
+                    <td id="sjs-E9"></td>
+                    <td id="sjs-F9"></td>
+                    <td id="sjs-G9"></td>
+                    <td id="sjs-H9"></td>
+                    <td id="sjs-I9"></td>
+                </tr>
+                <tr>
+                    <td data-t="s" data-v="DE>AR" id="sjs-A10">DE&gt;AR</td>
+                    <td data-t="s" data-v="Abu Hashhash, Ibrahim" id="sjs-B10">Abu Hashhash, Ibrahim</td>
+                    <td data-t="s" data-v="Erlbruch, Wolf" id="sjs-C10">Erlbruch, Wolf</td>
+                    <td data-t="s" data-v="Leonard" id="sjs-D10">Leonard</td>
+                    <td data-t="s" data-v="ليونارد" id="sjs-E10">ليونارد</td>
+                    <td data-t="n" data-v="2017" id="sjs-F10">2017</td>
+                    <td data-t="s" data-v="Verlag Hans Schiler" id="sjs-G10">Verlag Hans Schiler</td>
+                    <td data-t="n" data-v="443" id="sjs-H10">443</td>
+                    <td data-t="n" data-v="519" id="sjs-I10">519</td>
+                </tr>
+                <tr>
+                    <td data-t="s" data-v="DE>AR" id="sjs-A11">DE&gt;AR</td>
+                    <td data-t="s" data-v="Abu Hashhash, Ibrahim" id="sjs-B11">Abu Hashhash, Ibrahim</td>
+                    <td data-t="s" data-v="Krüss, James" id="sjs-C11">Krüss, James</td>
+                    <td data-t="s" data-v="Die ganz besonders nette Straßenbahn" id="sjs-D11">Die ganz besonders nette
+                        Straßenbahn</td>
+                    <td data-t="s" data-v="ألطف ترام في العالم" id="sjs-E11">ألطف ترام في العالم</td>
+                    <td data-t="n" data-v="2016" id="sjs-F11">2016</td>
+                    <td data-t="s" data-v="Verlag Hans Schiler" id="sjs-G11">Verlag Hans Schiler</td>
+                    <td data-t="n" data-v="415" id="sjs-H11">415</td>
+                    <td data-t="n" data-v="480" id="sjs-I11">480</td>
+                </tr>
+                <tr>
+                    <td data-t="s" data-v="DE>AR" id="sjs-A12">DE&gt;AR</td>
+                    <td data-t="s" data-v="Abu Hashhash, Ibrahim" id="sjs-B12">Abu Hashhash, Ibrahim</td>
+                    <td data-t="s" data-v="Rassmuss, Jens" id="sjs-C12">Rassmuss, Jens</td>
+                    <td data-t="s" data-v="Der wunderbarste Platz" id="sjs-D12">Der wunderbarste Platz</td>
+                    <td data-t="s" data-v="أجملُ مكانٍ في العالَم" id="sjs-E12">أجملُ مكانٍ في العالَم</td>
+                    <td data-t="n" data-v="2016" id="sjs-F12">2016</td>
+                    <td data-t="s" data-v="Verlag Hans Schiler" id="sjs-G12">Verlag Hans Schiler</td>
+                    <td data-t="n" data-v="716" id="sjs-H12">716</td>
+                    <td data-t="n" data-v="910" id="sjs-I12">910</td>
+                </tr>
+                <tr>
+                    <td data-t="s" data-v="DE>AR" id="sjs-A13">DE&gt;AR</td>
+                    <td data-t="s" data-v="Achiq, Adil" id="sjs-B13">Achiq, Adil</td>
+                    <td data-t="s" data-v="Hesse, Lena" id="sjs-C13">Hesse, Lena</td>
+                    <td data-t="s" data-v="Neulich am Südpol" id="sjs-D13">Neulich am Südpol</td>
+                    <td data-t="s" data-v="حَدِيثًا عِنْدَ القطبِ الجَنوبِيّ" id="sjs-E13">حَدِيثًا عِنْدَ القطبِ
+                        الجَنوبِيّ</td>
+                    <td data-t="n" data-v="2017" id="sjs-F13">2017</td>
+                    <td data-t="s" data-v="Edition bi:libri" id="sjs-G13">Edition bi:libri</td>
+                    <td data-t="n" data-v="332" id="sjs-H13">332</td>
+                    <td data-t="n" data-v="388" id="sjs-I13">388</td>
+                </tr>
+                <tr>
+                    <td data-t="s" data-v="DE>AR" id="sjs-A14">DE&gt;AR</td>
+                    <td data-t="s" data-v="Achiq, Adil" id="sjs-B14">Achiq, Adil</td>
+                    <td data-t="s" data-v="Hesse, Lena" id="sjs-C14">Hesse, Lena</td>
+                    <td data-t="s" data-v="Was besonderes" id="sjs-D14">Was besonderes</td>
+                    <td data-t="s" data-v="شَيْءٌ مُمَيَّزٌ" id="sjs-E14">شَيْءٌ مُمَيَّزٌ</td>
+                    <td data-t="n" data-v="2017" id="sjs-F14">2017</td>
+                    <td data-t="s" data-v="Edition bi:libri" id="sjs-G14">Edition bi:libri</td>
+                    <td data-t="n" data-v="244" id="sjs-H14">244</td>
+                    <td data-t="n" data-v="296" id="sjs-I14">296</td>
+                </tr>
+                <tr>
+                    <td data-t="s" data-v="DE>AR" id="sjs-A15">DE&gt;AR</td>
+                    <td data-t="s" data-v="Achiq, Adil" id="sjs-B15">Achiq, Adil</td>
+                    <td data-t="s" data-v="Pfister, Marcus" id="sjs-C15">Pfister, Marcus</td>
+                    <td data-t="s" data-v="Der Regenbogenfisch" id="sjs-D15">Der Regenbogenfisch</td>
+                    <td data-t="s" data-v="سَمَكَة قَوْسِ قُزَح" id="sjs-E15">سَمَكَة قَوْسِ قُزَح</td>
+                    <td data-t="n" data-v="2017" id="sjs-F15">2017</td>
+                    <td data-t="s" data-v="NordSüd/bi:libri" id="sjs-G15">NordSüd/bi:libri</td>
+                    <td data-t="n" data-v="459" id="sjs-H15">459</td>
+                    <td data-t="n" data-v="514" id="sjs-I15">514</td>
+                </tr>
+                <tr>
+                    <td data-t="s" data-v="DE>AR" id="sjs-A16">DE&gt;AR</td>
+                    <td data-t="s" data-v="Achiq, Adil" id="sjs-B16">Achiq, Adil</td>
+                    <td data-t="s" data-v="Pfister, Marcus" id="sjs-C16">Pfister, Marcus</td>
+                    <td data-t="s" data-v="Der Regenbogenfisch lernt verlieren" id="sjs-D16">Der Regenbogenfisch lernt
+                        verlieren</td>
+                    <td data-t="s" data-v="سَمَكَة قَوْسِ قُزَح تَتَعَلَّمُ أنْ تَخْسر" id="sjs-E16">سَمَكَة قَوْسِ
+                        قُزَح تَتَعَلَّمُ أنْ تَخْسر</td>
+                    <td data-t="n" data-v="2017" id="sjs-F16">2017</td>
+                    <td data-t="s" data-v="NordSüd/bi:libri" id="sjs-G16">NordSüd/bi:libri</td>
+                    <td data-t="n" data-v="613" id="sjs-H16">613</td>
+                    <td data-t="n" data-v="617" id="sjs-I16">617</td>
+                </tr>
+                <tr>
+                    <td data-t="s" data-v="DE>AR" id="sjs-A17">DE&gt;AR</td>
+                    <td data-t="s" data-v="Hassanein, Mahmoud" id="sjs-B17">Hassanein, Mahmoud</td>
+                    <td data-t="s" data-v="Boie, Kirsten" id="sjs-C17">Boie, Kirsten</td>
+                    <td data-t="s" data-v="Bestimmt wird alles gut" id="sjs-D17">Bestimmt wird alles gut</td>
+                    <td data-t="s" data-v="حَتْمًا الْغَدُ أَفْضَلُ" id="sjs-E17">حَتْمًا الْغَدُ أَفْضَلُ</td>
+                    <td data-t="n" data-v="2016" id="sjs-F17">2016</td>
+                    <td data-t="s" data-v="Klett Kinderbuch" id="sjs-G17">Klett Kinderbuch</td>
+                    <td data-t="n" data-v="2310" id="sjs-H17">2310</td>
+                    <td data-t="n" data-v="3007" id="sjs-I17">3007</td>
+                </tr>
+                <tr>
+                    <td data-t="s" data-v="DE>AR" id="sjs-A18">DE&gt;AR</td>
+                    <td data-t="s" data-v="Hassanein, Mahmoud" id="sjs-B18">Hassanein, Mahmoud</td>
+                    <td data-t="s" data-v="Richter, Anne" id="sjs-C18">Richter, Anne</td>
+                    <td data-t="s" data-v="Prinzessin Sharifa" id="sjs-D18">Prinzessin Sharifa</td>
+                    <td data-t="s" data-v="الأميرة شريفة" id="sjs-E18">الأميرة شريفة</td>
+                    <td data-t="n" data-v="2020" id="sjs-F18">2020</td>
+                    <td data-t="s" data-v="Baobab Books" id="sjs-G18">Baobab Books</td>
+                    <td data-t="n" data-v="701" id="sjs-H18">701</td>
+                    <td data-t="n" data-v="838" id="sjs-I18">838</td>
+                </tr>
+                <tr>
+                    <td data-t="s" data-v="DE>AR" id="sjs-A19">DE&gt;AR</td>
+                    <td data-t="s" data-v="Hassanein, Mahmoud" id="sjs-B19">Hassanein, Mahmoud</td>
+                    <td data-t="s" data-v="Richter, Anne" id="sjs-C19">Richter, Anne</td>
+                    <td data-t="s" data-v="Der mutige Walter" id="sjs-D19">Der mutige Walter</td>
+                    <td data-t="s" data-v="فالتر الشجاع" id="sjs-E19">فالتر الشجاع</td>
+                    <td data-t="n" data-v="2020" id="sjs-F19">2020</td>
+                    <td data-t="s" data-v="Baobab Books" id="sjs-G19">Baobab Books</td>
+                    <td data-t="n" data-v="626" id="sjs-H19">626</td>
+                    <td data-t="n" data-v="808" id="sjs-I19">808</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </main>
+
+</body>
+
+</html>

@@ -1,34 +1,106 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OCR</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+
 </head>
+
 <body>
-   <h1 class="font"> Optical Character Recognition mit besonderen Herausforderungen</h1> 
-   <p><i>Optical Character Recognition (OCR) </i> ist ein Teil der <i>Document Image Analysis (DIA)</i>, die sich mit automatisierter Textverarbeitung auf gescannten Bilddokumenten beschäftigt. 
-    Mit der Open Source OCR-Engine <a href="https://github.com/tesseract-ocr/tesseract"><i>tesseract</i></a> können mehrsprachige Inhalte aus Bilddateien extrahiert werden. 
-    Dabei müssen die Sprachparameter in Form von zugeteilten Abkürzungen übergeben werden.  
-    Es werden über 100 <a href="https://tesseract-ocr.github.io/tessdoc/Data-Files-in-different-versions.html">Sprachen</a> unterstützt. </p>
-   <h2 class="font2"> 1. Bilingualität</h2>
-   <h3 class="font3">1.1. zwei Sprachen, zwei Schriftsysteme</h3>
-   <h3 class="font3">1.2. LTR vs RTL language</h3>
-   <p>Die Sprachen Arabisch und Deutsch verfügen nicht nur über unterschiedliche Schriftsysteme sondern werden auch in entgegengesetzte Richtungen geschrieben und gelesen. Arabisch bedient sich eines <a href="https://en.wikipedia.org/wiki/Right-to-left_script"><i>right-to-left writing system (RTL)</i></a> </p>
-   <h2 class="font2">2. Illustrierte Seiten</h2>
-   <h3 class="font3">2.1. page segmentation modes</h3>
-   <p>In Tesseract </p>
-   <h3 class="font3">2.2. Auswirkungen der Binarisierung</h3>
-   <h2 class="font2">3. Accuracy</h2>
-   <img class="image" src='./images/Accuracy_DE.png'>
-   <br><img class="image" src='./images/Accuracy_AR.png'>
-   <h3 class="font3">3.1. Vergleichszahlen</h3>
-   <h4>Script</h4>
-   <p>Dieses <a href="https://github.com/gitmthoma/ocr_super8_project">Script</a> genommen und angepasst</p>
-   <h2 class="font2">4. OCR Arabisch </h2>
-   <h3 class="font3">4.1. häufigste Fehlerquellen</h3>
-   <h2 class="font2">5. Möglichkeiten durch Training und Preprocessing</h2>
-   <h5>6. Quellen</h5>
-   <a href="/quellen.html">Quellen</a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Anja Meyer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="report.html">Workflow</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/data.html">Datengrundlage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sources.html">Referenzen</a>
+                        </li>
+                    </ul>
+                    <a href="./pages/contact.html" class="btn btn-outline-success">
+                        kontakt
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="homeCarousel" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/background-1838851_1280.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Übersetzungssignale in <br>
+                            deutsch-/arabischsprachiger Kinderliteratur</h1>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mx-auto mt-5" style="width: 80%;">
+            <h1>
+                Forschungsvorhaben
+            </h1>
+            <p>
+                Der Inhalt dieser Webseite entstand Im Rahmen der Masterarbeit mit dem Titel „Übersetzungssignale
+                in deutsch-/arabischsprachiger Kinderliteratur“ im Studiengang "Digitale Methodik in den Geistes- und Kulturwissenschaften" der JGU Mainz. Hier wird der Workflow einer
+                korpusliteraturwissenschaftlichen Analyse dokumentiert. <br>
+                Ziel der Arbeit war, Übersetzungssignale mit computerbasierten Methoden aus bilingualen Texten zu extrahieren.
+                Die Erstellung des Korpus und die Vorbereitung der Daten nahmen dabei eine wichtige Rolle ein. Die Umwandlung von Bild- zu
+                Textdateien mittels Optical Character Recognition (OCR) stellte aufgrund der Besonderheit der
+                Daten eine Herausforderung dar. 17 illustrierte bilinguale
+                Kinderbücher bilden die Datengrundlage. Sie sind für eine Zielgruppe von vier- bis achtjährigen Kindern verfasst und enthalten Text auf Deutsch
+                und Arabisch. Zum Vergleich wurde zu jeder Übersetzung eine maschinelle Übersetzung durch Chat-GPT 3.5 durchgeführt.<br> Nicht nur das Genre Kinderliteratur fand in der
+                literaturwissenschaftlichen Forschung bisher weniger Beachtung, sondern auch übersetzte Textdaten mit
+                dem Sprachpaar Deutsch und Arabisch. Ein Großteil der bestehenden Literaturkorpora besitzt
+                Englisch als Ausgangssprache  <a target="_blank" href="pages/sources.html?number=[6]">[6]</a>. Außerdem ist das Layout der Seiten in Kinderbüchern besonders flexibel.
+                In der betrachteten Literatur sind meist zwei Paragraphen mit Text (einer auf Deutsch
+                und einer auf Arabisch) auf einem illustrierten Hintergrund zu finden. Dabei kann die Anordnung der
+                Textparagraphen auf jeder Seite variieren. Der zu extrahierende Text ist den Bedürfnissen der
+                Zielgruppe entsprechend kurz. Die bilingualen Paragraphen wurde mit der multilingualen OCR-Engine
+                <i>tesseract</i> in Textform umgewandelt. Getrennt nach Übersetzungsrichtung werden zwei
+                Subkorpora erstellt. Außerdem werden im späteren Verlauf für stilometrische Untersuchungen und Topicexploration
+                gleichsprachige Texte als Subkorpora zusammen untersucht.<br>  
+                Das betrachtete Korpus betreffend, konnten die Übersetzenden in die Übersetzungsrichtung DE>AR sichtbar gemacht werden. Für die zweite Übersetzungsrichtung AR>DE konnten die Übersetzenden jedoch nicht durch stilometrische Untersuchungen ermittelt werden. Während des Workflows wurden Erkentnisse über die computerbasierte Textverarbeitung für Datengrundlagen in arabischer Schrift gesammelt und herausgearbeitet.
+            </p>
+            </p>
+        </div>
+
+
+    </main>
+
+
 </body>
+
 </html>
